@@ -13,11 +13,9 @@ abstract class Employee implements SalaryDetails {
     protected Department department;
     /* protected Performance performance; */
     protected String employeeDescription;
-
     public Employee(String name) {
         this.name = name;
     }
-
     // Constructor
     public void Employee(Department department /** Performance performance **/
     ) {
@@ -25,19 +23,15 @@ abstract class Employee implements SalaryDetails {
         /** this.performance = performance; **/
         this.employeeDescription = ""; // Can be set by subclasses later
     }
-
     // Abstract method to be implemented by subclasses
     public abstract void writeEmployeeDescription();
-
     // Getter and setter for name
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     // Getter and setter for employeeDescription
     public String getEmployeeDescription() {
         return employeeDescription;
@@ -61,7 +55,6 @@ abstract class Employee implements SalaryDetails {
      * public Performance getPerformance() {
      * return performance;
      * }
-     * 
      * public void setPerformance(Performance performance) {
      * this.performance = performance;
      * }
