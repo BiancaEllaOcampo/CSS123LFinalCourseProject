@@ -6,7 +6,7 @@ package com.group4.libraries;
 
 /**
  *
- * @author garps
+ * @author Bianca
  */
 abstract class Employee implements SalaryDetails {
     protected String name;
